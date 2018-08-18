@@ -1,0 +1,23 @@
+#commentShow{
+    margin: 20px auto;
+    padding: 10px 10px;
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.img-thumbnail{
+    padding: 0;
+}
+
+#campDesc{
+    padding: 9px;
+}
+.delete-form{
+    display: inline;
+}
+
+#comment-btn-space{
+    margin-bottom: 5px;
+}
