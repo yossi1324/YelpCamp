@@ -77,3 +77,7 @@ body {
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
+#landBtn{
+  background-color:#2b2b2b;
+  border-color: #2b2b2b;
+}
