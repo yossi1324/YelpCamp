@@ -1,5 +1,5 @@
 # YelpCamp
-Yelp camp website . node.js 
+Yelp camp website .Using: node.js ,HTML5 , CSS3, JavaScript, ExpressJS, Bootstrap, MongoDB, Authentication,passportJS e.c
 https://yossiyelpcamp.herokuapp.com
 ## Initial Setup
 * Add Landing Page
