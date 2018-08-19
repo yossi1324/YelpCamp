@@ -3,6 +3,7 @@ var router =express.Router({mergeParams:true});
 var Campground=require("../models/campground");
 var Comment=require("../models/comment");
 var middleware=require("../middleware/index.js");
+var moment=require("moment");
 
 //Comments new
 router.get("/new",middleware.isLoggedIn , function(req, res) {
@@ -31,6 +32,7 @@ router.post("/",middleware.isLoggedIn, function(req,res){
                     //add username and id to comment
                     comment.author.id= req.user._id;
                     comment.author.username=req.user.username;
+                    comment.time=moment().format("MMM DD hh:mm");
                     comment.save();
                     campground.comments.push(comment._id);
                     campground.save();

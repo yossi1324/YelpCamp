@@ -21,8 +21,8 @@ var commentRoutes   = require("./routes/comments"),
 //mongoose.connect("",{ useNewUrlParser: true }); //mlab cloud db
 //mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });    //local db
 //process.env.DATABASEURL
-var url = process.env.DATABASEURL;
-mongoose.connect(url,{ useNewUrlParser: true });
+
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");

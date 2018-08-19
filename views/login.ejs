@@ -1,9 +1,29 @@
 <% include ./partials/header %>
-<h1> login</h1>
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="submit" value="Login!">
-</form>
+<link rel="stylesheet" href="/stylesheets/login.css">
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h1>Login</h1>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+   <form action="/login" method="POST">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+      <input type="submit" class="fadeIn fourth" value="Login">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="/register">New in YelpCamp? Register now!</a>
+    </div>
+
+  </div>
+</div>
+
 
 <% include ./partials/footer %>

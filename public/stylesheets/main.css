@@ -21,3 +21,30 @@
 #comment-btn-space{
     margin-bottom: 5px;
 }
+.jumbotron{
+    background-color: #d5f2fd;
+    padding: 10px 10px;
+    margin: 30px auto;
+}
+.bg-light{
+    background-color: #d5f2fd !important;
+}
+#sayingHi{
+    padding-right: 50px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#newCampBtn{
+    border-color: #d5f2fd;
+    background-color: #0c3e73b8;
+}
+#newCampBtn:hover { 
+    text-decoration: underline;
+}
+#alertShow{
+    width: 25%;
+    margin-top: 15px;
+}
